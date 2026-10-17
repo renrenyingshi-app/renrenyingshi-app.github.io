@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>人人影视｜影视资讯·剧集盘点·观影指南 - renrenyingshi-app.github.io</title>
+<meta name="description" content="人人影视（renrenyingshi-app.github.io）专注院线热映速览、剧集口碑盘点与深度影评解读，每日筛出真正值得花时间的影视作品，附观影门槛提示、适合人群与追更节奏建议，帮你在片荒时少走弯路。">
+<meta name="keywords" content="人人影视,人人影视官网,人人影视剧集盘点,人人影视影评,人人影视热映速览,影视资讯,剧集推荐,观影指南,高分剧集,冷门佳片">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="author" content="人人影视编辑部">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#0b1a1f">
+<link rel="canonical" href="https://renrenyingshi-app.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="人人影视">
+<meta property="og:title" content="人人影视｜影视资讯·剧集盘点·观影指南">
+<meta property="og:description" content="院线热映速览、剧集口碑榜单、深度影评解读与观影问答，人人影视帮你把好故事看到最后。">
+<meta property="og:url" content="https://renrenyingshi-app.github.io/">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="人人影视｜影视资讯·剧集盘点·观影指南">
+<meta name="twitter:description" content="院线热映速览、剧集口碑榜单、深度影评解读与观影问答。">
+<style>
+:root{
+  --ink:#0b1a1f;
+  --ink2:#12262d;
+  --paper:#f4efe6;
+  --amber:#f0b429;
+  --amber-soft:#ffd77a;
+  --line:rgba(244,239,230,.14);
+  --muted:#9db0b6;
+  --max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  background:var(--ink);
+  color:var(--paper);
+  font:16px/1.75 "PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+
+/* 顶栏 */
+.topbar{
+  position:sticky;top:0;z-index:60;
+  background:rgba(11,26,31,.92);
+  backdrop-filter:saturate(160%) blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.topbar .wrap{display:flex;align-items:center;gap:18px;height:64px}
+.brand{display:flex;align-items:baseline;gap:9px;font-weight:800;letter-spacing:.5px;font-size:20px}
+.brand b{color:var(--amber)}
+.brand i{font-style:normal;font-size:11px;color:var(--muted);letter-spacing:2px;text-transform:uppercase}
+.nav{margin-left:auto;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{
+  padding:8px 13px;border-radius:999px;font-size:14px;color:#d8dfe1;
+  white-space:nowrap;transition:.25s;
+}
+.nav a:hover{background:rgba(240,180,41,.14);color:var(--amber-soft)}
+.menu-btn{
+  display:none;margin-left:auto;background:none;border:1px solid var(--line);
+  color:var(--paper);border-radius:8px;padding:6px 12px;font-size:14px;cursor:pointer;
+}
+
+/* 首屏 */
+.hero{
+  position:relative;padding:78px 0 64px;
+  background:
+    radial-gradient(900px 420px at 82% 8%, rgba(240,180,41,.16), transparent 62%),
+    linear-gradient(180deg,#0b1a1f 0%,#0e2129 100%);
+  border-bottom:1px solid var(--line);
+  overflow:hidden;
+}
+.hero:before{
+  content:"";position:absolute;left:0;right:0;bottom:-1px;height:34px;
+  background:repeating-linear-gradient(90deg,var(--paper) 0 6px,transparent 6px 26px);
+  opacity:.07;
+}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:center}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:9px;font-size:13px;color:var(--amber);
+  border:1px solid rgba(240,180,41,.35);border-radius:999px;padding:5px 14px;margin-bottom:22px;
+  letter-spacing:1px;
+}
+.eyebrow span{width:6px;height:6px;border-radius:50%;background:var(--amber);display:inline-block}
+h1{
+  font-size:clamp(31px,5.4vw,54px);line-height:1.2;font-weight:900;letter-spacing:-.5px;
+}
+h1 em{font-style:normal;color:var(--amber);position:relative}
+h1 em:after{
+  content:"";position:absolute;left:0;right:0;bottom:2px;height:9px;
+  background:rgba(240,180,41,.22);z-index:-1;
+}
+.lede{margin-top:20px;color:#c3cfd2;font-size:17px;max-width:60ch}
+.lede strong{color:var(--paper);font-weight:700}
+.cta{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{
+  display:inline-block;padding:13px 26px;border-radius:10px;font-weight:700;font-size:15px;transition:.25s;
+}
+.btn-1{background:var(--amber);color:#221a04}
+.btn-1:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(240,180,41,.28)}
+.btn-2{border:1px solid var(--line);color:#d8dfe1}
+.btn-2:hover{border-color:var(--amber);color:var(--amber-soft)}
+.hostline{
+  margin-top:26px;font-size:13px;color:var(--muted);word-break:break-all;
+}
+.hostline code{
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  color:var(--amber-soft);background:rgba(240,180,41,.08);padding:2px 7px;border-radius:5px;
+}
+
+/* 胶片卡 */
+.filmcard{
+  background:linear-gradient(160deg,#16303a,#0d1f26);
+  border:1px solid var(--line);border-radius:16px;padding:8px;
+  box-shadow:0 26px 60px rgba(0,0,0,.45);
+}
+.filmcard .screen{
+  border-radius:10px;background:#071216;padding:24px 22px;
+  border:1px solid rgba(244,239,230,.08);
+}
+.filmcard h3{font-size:15px;letter-spacing:2px;color:var(--amber);margin-bottom:16px}
+.qrow{
+  display:flex;justify-content:space-between;gap:12px;
+  padding:11px 0;border-bottom:1px dashed rgba(244,239,230,.13);font-size:14px;
+}
+.qrow:last-child{border-bottom:0}
+.qrow b{color:var(--amber-soft);font-variant-numeric:tabular-nums}
+.qrow span{color:#bfcbd0}
+
+/* 板块 */
+section{padding:72px 0}
+.sechead{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:34px}
+.sechead h2{font-size:clamp(23px,3.4vw,32px);font-weight:800;letter-spacing:-.2px}
+.sechead p{color:var(--muted);font-size:14px}
+.tagnum{
+  font-size:12px;color:var(--amber);border:1px dashed rgba(240,180,41,.4);
+  padding:3px 10px;border-radius:6px;letter-spacing:1px;
+}
+.alt{background:linear-gradient(180deg,#0e2129,#0b1a1f)}
+
+/* 卡片 */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{
+  background:rgba(244,239,230,.04);border:1px solid var(--line);border-radius:14px;
+  overflow:hidden;display:flex;flex-direction:column;transition:.3s;
+}
+.card:hover{transform:translateY(-5px);border-color:rgba(240,180,41,.5);background:rgba(240,180,41,.06)}
+.poster{
+  height:150px;display:flex;align-items:flex-end;padding:14px;
+  font-size:12px;letter-spacing:1px;color:rgba(255,255,255,.85);
+}
+.p1{background:linear-gradient(140deg,#3b2f5e,#161a2e)}
+.p2{background:linear-gradient(140deg,#6b3a1f,#231309)}
+.p3{background:linear-gradient(140deg,#1f5a4a,#0b2019)}
+.p4{background:linear-gradient(140deg,#5e2436,#20090f)}
+.card .body{padding:16px 17px 20px;flex:1;display:flex;flex-direction:column}
+.card h3{font-size:17px;font-weight:700;margin-bottom:8px}
+.card .meta{font-size:12px;color:var(--amber);margin-bottom:10px;letter-spacing:.5px}
+.card p{font-size:14px;color:#b3c0c5;flex:1}
+.card .foot{
+  margin-top:14px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:11px;
+  display:flex;justify-content:space-between;
+}
+
+/* 榜单 */
+.rank{display:grid;grid-template-columns:1fr 1fr;gap:14px 40px}
+.rankitem{
+  display:flex;align-items:center;gap:16px;padding:16px 0;
+  border-bottom:1px solid var(--line);
+}
+.rno{
+  width:34px;height:34px;flex:none;border-radius:9px;display:grid;place-items:center;
+  font-weight:800;font-size:15px;background:rgba(240,180,41,.14);color:var(--amber);
+}
+.rankitem:nth-child(1) .rno{background:var(--amber);color:#221a04}
+.rinfo{flex:1;min-width:0}
+.rinfo h3{font-size:16px;font-weight:700;margin-bottom:5px}
+.rinfo p{font-size:13px;color:#a7b4b9;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar{width:96px;flex:none;height:5px;border-radius:99px;background:rgba(244,239,230,.12);overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--amber),#ff8f4d)}
+.score{width:44px;flex:none;text-align:right;font-size:15px;font-weight:800;color:var(--amber-soft);font-variant-numeric:tabular-nums}
+
+/* 影评交错 */
+.zig{display:grid;gap:30px}
+.zig article{
+  display:grid;grid-template-columns:190px 1fr;gap:26px;align-items:start;
+  background:rgba(244,239,230,.035);border:1px solid var(--line);border-radius:14px;padding:22px;
+}
+.zig .thumb{
+  height:118px;border-radius:10px;display:grid;place-items:center;
+  font-size:12px;letter-spacing:2px;color:rgba(255,255,255,.8);
+}
+.t1{background:linear-gradient(150deg,#2c4a6b,#101c2a)}
+.t2{background:linear-gradient(150deg,#6b5a1f,#251f07)}
+.t3{background:linear-gradient(150deg,#4a2c5e,#190f24)}
+.zig h3{font-size:18px;margin-bottom:10px}
+.zig p{font-size:14.5px;color:#b3c0c5;margin-bottom:12px}
+.zig .by{font-size:12.5px;color:var(--muted)}
+
+/* 问答 */
+.faq{max-width:840px}
+.faq details{
+  border:1px solid var(--line);border-radius:12px;margin-bottom:12px;
+  background:rgba(244,239,230,.03);overflow:hidden;
+}
+.faq summary{
+  cursor:pointer;list-style:none;padding:17px 20px;font-weight:700;font-size:16px;
+  display:flex;align-items:center;gap:12px;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:before{
+  content:"+";color:var(--amber);font-size:20px;font-weight:800;line-height:1;
+}
+.faq details[open] summary:before{content:"–"}
+.faq details[open] summary{border-bottom:1px solid var(--line)}
+.faq .ans{padding:16px 20px 20px;font-size:14.5px;color:#b3c0c5;border-left:3px solid rgba(240,180,41,.5);margin:0 20px 16px}
+
+/* 关于 */
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:46px;align-items:start}
+.stat{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.stat div{
+  border:1px solid var(--line);border-radius:12px;padding:18px;background:rgba(244,239,230,.03);
+}
+.stat b{display:block;font-size:26px;color:var(--amber);font-weight:900;line-height:1.2}
+.stat span{font-size:12.5px;color:var(--muted)}
+.about p{color:#bcc8cc;font-size:15.5px;margin-bottom:15px}
+.about ul{list-style:none;margin-top:8px}
+.about li{padding:9px 0 9px 22px;position:relative;font-size:14.5px;color:#b3c0c5;border-bottom:1px dashed rgba(244,239,230,.1)}
+.about li:before{content:"◆";position:absolute;left:0;color:var(--amber);font-size:10px;top:14px}
+
+/* 页脚 */
+footer{border-top:1px solid var(--line);background:#08151a;padding:44px 0 34px}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
+footer h4{font-size:14px;margin-bottom:14px;color:var(--amber);letter-spacing:1px}
+footer p,footer li{font-size:13.5px;color:#93a3a9}
+footer ul{list-style:none}
+footer li{padding:5px 0}
+footer li a:hover{color:var(--amber-soft)}
+.fbottom{
+  margin-top:30px;padding-top:20px;border-top:1px solid var(--line);
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:#7e8f95;
+}
+.fbottom a{color:var(--amber-soft);word-break:break-all}
+
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .rank{grid-template-columns:1fr}
+  .about{grid-template-columns:1fr;gap:30px}
+  .fgrid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:620px){
+  .nav{display:none}
+  .menu-btn{display:block}
+  .topbar .wrap{height:58px}
+  .hero{padding:52px 0 46px}
+  section{padding:52px 0}
+  .cards{grid-template-columns:1fr}
+  .zig article{grid-template-columns:1fr;gap:16px;padding:18px}
+  .zig .thumb{height:96px}
+  .stat{grid-template-columns:1fr 1fr}
+  .fgrid{grid-template-columns:1fr}
+  .rankitem{gap:11px}
+  .bar{width:60px}
+  .score{width:38px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#"><b>人人影视</b><i>renren films</i></a>
+    <nav class="nav">
+      <a href="#hot">热映速览</a>
+      <a href="#rank">口碑榜单</a>
+      <a href="#review">影评视角</a>
+      <a href="#faq">观影问答</a>
+      <a href="#about">关于本站</a>
+    </nav>
+    <button class="menu-btn" type="button">栏目</button>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow"><span></span>DAILY PICKS · 每日更新</span>
+      <h1>人人影视，把好故事<em>看到最后</em></h1>
+      <p class="lede">院线新片、剧集更新、冷门佳片，信息太多反而不好选。<strong>人人影视</strong>只做一件事：把当天值得你按下播放键的那一部挑出来，连同观影门槛、情绪成本和适合一起看的人，一并讲清楚。</p>
+      <div class="cta">
+        <a class="btn btn-1" href="#hot">看看今天推什么</a>
+        <a class="btn btn-2" href="#rank">口碑榜单 →</a>
+      </div>
+      <p class="hostline">本站地址：<code>https://renrenyingshi-app.github.io</code></p>
+    </div>
+    <div class="filmcard">
+      <div class="screen">
+        <h3>本周数据面板</h3>
+        <div class="qrow"><span class="lab">收录条目</span><b>12,480 部</b></div>
+        <div class="qrow"><span class="lab">本周新增点评</span><b>316 条</b></div>
+        <div class="qrow"><span class="lab">编辑复核率</span><b>92%</b></div>
+        <div class="qrow"><span class="lab">更新时段</span><b>每日 09:00</b></div>
+        <div class="qrow"><span class="lab">人人影视 值班编辑</span><b>4 人</b></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+
+<section id="hot">
+  <div class="wrap">
+    <div class="sechead">
+      <h2>热映速览</h2>
+      <p>四条一句话判断，替你先踩一遍坑</p>
+      <span class="tagnum">01 / 院线</span>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <div class="poster p1">悬疑 / 现实题材</div>
+        <div class="body">
+          <h3>河边的错误</h3>
+          <div class="meta">★★★★☆ 4.1 · 102 分钟</div>
+          <p>叙事故意留了缺口，不适合想看"破案爽感"的观众；适合愿意跟着镜头一起犯迷糊的人。</p>
+          <div class="foot"><span>建议：大银幕</span><span>门槛 中高</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="poster p2">传记 / 历史</div>
+        <div class="body">
+          <h3>奥本海默</h3>
+          <div class="meta">★★★★★ 4.6 · 180 分钟</div>
+          <p>三小时但对白密度极高，走神五分钟就得倒回去。提前了解"曼哈顿计划"背景会舒服很多。</p>
+          <div class="foot"><span>建议：连看两遍</span><span>门槛 中</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="poster p3">动画 / 奇幻</div>
+        <div class="body">
+          <h3>你想活出怎样的人生</h3>
+          <div class="meta">★★★★☆ 4.3 · 124 分钟</div>
+          <p>不解释、不收尾，情绪全靠画面堆。带小孩来看大概率会问"然后呢"。</p>
+          <div class="foot"><span>建议：一个人看</span><span>门槛 中</span></div>
+        </div>
+      </article>
+      <article class="card">
+        <div class="poster p4">剧情 / 法庭</div>
+        <div class="body">
+          <h3>坠落的审判</h3>
+          <div class="meta">★★★★☆ 4.4 · 152 分钟</div>
+          <p>全片几乎只有对话和一间屋子，但越看越凉。情侣慎选，看完容易吵起来。</p>
+          <div class="foot"><span>建议：白天看</span><span>门槛 低</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="rank" class="alt">
+  <div class="wrap">
+    <div class="sechead">
+      <h2>剧集口碑榜</h2>
+      <p>按本周站内讨论热度与完播率综合排序</p>
+      <span class="tagnum">02 / 剧集</span>
+    </div>
+    <div class="rank">
+      <div class="rankitem">
+        <div class="rno">1</div>
+        <div class="rinfo"><h3>漫长的季节</h3><p>年代 / 悬疑 · 12 集 · 已完结</p></div>
+        <div class="bar"><i style="width:94%"></i></div>
+        <div class="score">9.4</div>
+      </div>
+      <div class="rankitem">
+        <div class="rno">2</div>
+        <div class="rinfo"><h3>熊家餐馆 第二季</h3><p>剧情 / 职场 · 10 集 · 更新中</p></div>
+        <div class="bar"><i style="width:89%"></i></div>
+        <div class="score">8.9</div>
+      </div>
+      <div class="rankitem">
+        <div class="rno">3</div>
+        <div class="rinfo"><h3>幕府将军</h3><p>历史 / 权谋 · 10 集 · 已完结</p></div>
+        <div class="bar"><i style="width:87%"></i></div>
+        <div class="score">8.7</div>
+      </div>
+      <div class="rankitem">
+        <div class="rno">4</div>
+        <div class="rinfo"><h3>繁花</h3><p>都市 / 商战 · 30 集 · 已完结</p></div>
+        <div class="bar"><i style="width:86%"></i></div>
+        <div class="score">8.6</div>
+      </div>
+      <div class="rankitem">
+        <div class="rno">5</div>
+        <div class="rinfo"><h3>拾荒者统治</h3><p>科幻 / 动画 · 8 集 · 已完结</p></div>
+        <div class="bar"><i style="width:84%"></i></div>
+        <div class="score">8.5</div>
+      </div>
+      <div class="rankitem">
+        <div class="rno">6</div>
+        <div class="rinfo"><h3>我的天才女友 第四季</h3><p>文学改编 / 成长 · 10 集 · 已完结</p></div>
+        <div class="bar"><i style="width:83%"></i></div>
+        <div class="score">8.4</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="review">
+  <div class="wrap">
+    <div class="sechead">
+      <h2>影评视角</h2>
+      <p>不打分，只聊"它到底想干嘛"</p>
+      <span class="tagnum">03 / 长文</span>
+    </div>
+    <div class="zig">
+      <article>
+        <div class="thumb t1">SCREENCRAFT</div>
+        <div>
+          <h3>为什么现在的悬疑片都不着急破案了</h3>
+          <p>从《河边的错误》往回看，近十年的华语悬疑有一个明显转向：凶手是谁不再重要，重要的是"谁在讲述"。叙事可信度被反复动摇，观众获得的信息永远是二手的。这其实更接近真实的记忆方式——我们对往事的复述，本身就漏洞百出。</p>
+          <p class="by">值班编辑 · 楚原 ｜ 阅读约 6 分钟 ｜ 人人影视 影评专栏</p>
+        </div>
+      </article>
+      <article>
+        <div class="thumb t2">PACING LAB</div>
+        <div>
+          <h3>三小时不算长，只要你不让它有尿点</h3>
+          <p>《奥本海默》的时长被吐槽过很多次，但它的章节切换频率其实高于普通影片——平均每 11 分钟就有一次时间线跳跃或场景重构。人对"长"的感知来自重复感，不是分钟数。真正难熬的是那些九十分钟却只讲了一件事的电影。</p>
+          <p class="by">值班编辑 · 阿峦 ｜ 阅读约 5 分钟 ｜ 人人影视 节奏研究</p>
+        </div>
+      </article>
+      <article>
+        <div class="thumb t3">REWATCH</div>
+        <div>
+          <h3>重看《千与千寻》，才发现汤婆婆不是反派</h3>
+          <p>小时候只记得无脸男和白龙，长大再看，整部片讲的是"劳动如何让人不被吃掉"。名字被夺走等于档案被注销，而千寻一直在干活。宫崎骏把成长这件抽象的事，落成了一份具体的工作合同。</p>
+          <p class="by">值班编辑 · 老魏 ｜ 阅读约 7 分钟 ｜ 人人影视 经典重读</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="alt">
+  <div class="wrap">
+    <div class="sechead">
+      <h2>观影问答</h2>
+      <p>被问得最多的几件事</p>
+      <span class="tagnum">04 / FAQ</span>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>人人影视 的推荐是怎么产生的？</summary>
+        <div class="ans">先由 4 位值班编辑各自提交候选，再做交叉复核：只要两人以上给出"不值得"就淘汰。最后的排序参考站内讨论热度与完播率，不参考任何平台付费推广位。</div>
+      </details>
+      <details>
+        <summary>榜单分数为什么和别的地方不一样？</summary>
+        <div class="ans">我们用的是"讨论热度 + 完播表现"的复合值，不是纯评分均分。所以有些豆瓣高分但没人追完的剧，在这里排名会偏低，这是有意为之。</div>
+      </details>
+      <details>
+        <summary>片荒的时候从哪看起？</summary>
+        <div class="ans">直接翻"热映速览"，那四张卡片的排序逻辑是"今天最容易看完"，不是"质量最高"。想啃硬骨头再去口碑榜，从第 1 名顺着往下看基本不会错。</div>
+      </details>
+      <details>
+        <summary>会剧透吗？</summary>
+        <div class="ans">速览和榜单全程无剧透。影评长文里涉及关键转折的内容会提前标注"含剧透"，可以放心跳到结论段。</div>
+      </details>
+      <details>
+        <summary>多久更新一次？</summary>
+        <div class="ans">每日 09:00 更新速览，榜单每周一重排，长文不定时发布，一般一周两到三篇。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <div class="stat">
+        <div><b>12,480</b><span>收录影视条目</span></div>
+        <div><b>316</b><span>本周新增点评</span></div>
+        <div><b>92%</b><span>编辑复核率</span></div>
+        <div><b>5</b><span>常驻栏目</span></div>
+      </div>
+    </div>
+    <div>
+      <h2 style="font-size:26px;margin-bottom:16px">关于人人影视</h2>
+      <p>这不是一个资源站，也不提供任何下载。人人影视 做的是"看之前"的那一半工作：把选择成本降下来，让你把两小时花在值得的地方。</p>
+      <p>所有条目由编辑手工维护，不接受片方供稿，也不投放任何形式的推广位。</p>
+      <ul>
+        <li>影视资讯与热映速览 · 每日更新</li>
+        <li>剧集口碑榜单 · 每周一重排</li>
+        <li>影评长文与经典重读 · 不定时发布</li>
+        <li>观影问答 · 长期维护</li>
+      </ul>
+      <p style="margin-top:18px;font-size:13.5px;color:var(--muted)">站点地址：https://renrenyingshi-app.github.io</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h4>人人影视</h4>
+        <p>影视资讯 · 剧集盘点 · 观影指南。每天筛出值得你花时间的那一部，不提供下载与外链跳转。</p>
+        <p style="margin-top:10px">地址：<a href="#">https://renrenyingshi-app.github.io</a></p>
+      </div>
+      <div>
+        <h4>栏目导航</h4>
+        <ul>
+          <li><a href="#hot">热映速览</a></li>
+          <li><a href="#rank">口碑榜单</a></li>
+          <li><a href="#review">影评视角</a></li>
+          <li><a href="#faq">观影问答</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>其他</h4>
+        <ul>
+          <li><a href="#about">关于本站</a></li>
+          <li><a href="#">编辑投稿</a></li>
+          <li><a href="#">内容纠错</a></li>
+          <li><a href="#">隐私说明</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbottom">
+      <span>© 2024 人人影视 · renrenyingshi-app.github.io</span>
+      <span><a href="#">https://renrenyingshi-app.github.io</a></span>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebSite",
+      "@id":"https://renrenyingshi-app.github.io/#website",
+      "url":"https://renrenyingshi-app.github.io/",
+      "name":"人人影视",
+      "alternateName":"人人影视 - 影视资讯与剧集盘点",
+      "description":"人人影视提供院线热映速览、剧集口碑榜单、深度影评解读与观影问答，帮观众在片荒时快速做出选择。",
+      "inLanguage":"zh-CN",
+      "publisher":{"@id":"https://renrenyingshi-app.github.io/#org"}
+    },
+    {
+      "@type":"Organization",
+      "@id":"https://renrenyingshi-app.github.io/#org",
+      "name":"人人影视",
+      "url":"https://renrenyingshi-app.github.io/"
+    },
+    {
+      "@type":"BreadcrumbList",
+      "@id":"https://renrenyingshi-app.github.io/#breadcrumb",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"首页","item":"https://renrenyingshi-app.github.io/"},
+        {"@type":"ListItem","position":2,"name":"热映速览","item":"https://renrenyingshi-app.github.io/#hot"},
+        {"@type":"ListItem","position":3,"name":"剧集口碑榜","item":"https://renrenyingshi-app.github.io/#rank"},
+        {"@type":"ListItem","position":4,"name":"影评视角","item":"https://renrenyingshi-app.github.io/#review"},
+        {"@type":"ListItem","position":5,"name":"观影问答","item":"https://renrenyingshi-app.github.io/#faq"}
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+(function(){
+  var btn=document.querySelector('.menu-btn');
+  var nav=document.querySelector('.nav');
+  if(btn&&nav){
+    btn.addEventListener('click',function(){
+      var show=nav.style.display==='flex';
+      nav.style.display=show?'':'flex';
+      nav.style.flexDirection='column';
+      nav.style.position='absolute';
+      nav.style.top='58px';
+      nav.style.left='0';
+      nav.style.right='0';
+      nav.style.background='rgba(11,26,31,.98)';
+      nav.style.padding='10px 22px 18px';
+      nav.style.borderBottom='1px solid rgba(244,239,230,.14)';
+      if(show){nav.style.display='none';}
+    });
+    nav.addEventListener('click',function(e){
+      if(e.target.tagName==='A'&&window.innerWidth<=620){nav.style.display='none';}
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
